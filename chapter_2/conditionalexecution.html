@@ -1,0 +1,43 @@
+/** @format */
+
+<!DOCTYPE html>
+<head>
+    <title>Conditional Execution</title>
+</head>
+<body>
+    <script>
+       // program takes the proper branch based on the situation at hand. This is called conditional execution.
+// Conditional execution is created with the if keyword in JavaScript.
+let theNumber = Number(prompt('Pick a number'));
+if(!Number.isNaN(theNumber)){
+     document.write("Your number is the square root of " +
+              theNumber * theNumber);
+}
+
+// single statement, omit braces
+if(1 + 1 === 2) console.log('Its true');
+
+// use the else keyword, together with if, to create two separate, alternative execution paths.
+let number = Number(prompt("Pick a number"));
+if (!Number.isNaN(number)) {
+  console.log("Your number is the square root of " +
+              number * number);
+} else {
+  console.log("Hey. Why didn't you give me a number?");
+}
+
+// If you have more than two paths to choose from, you can “chain” multiple if/else pairs together.
+let num = Number(prompt("Pick a number"));
+
+if (num < 10) {
+  console.log("Small");
+} else if (num < 100) {
+  console.log("Medium");
+} else {
+  console.log("Large");
+}
+    </script>
+</body>
+</html >
+    
+

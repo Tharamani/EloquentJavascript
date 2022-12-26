@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <title>Typecoercion</title>
+</head>
+<body>
+    <script>
+       //Tyecoercion => When operator works on different datatypes, JS will automatically converts value to the type it needs using set of rules, this leads to unexpected results.
+       document.write(`<br />number * null  : ${8 * null}`); // 0
+       document.write(`<br />number / null  : ${8 / null}`); // Infinity
+       document.write(`<br />+null : ${+null}`);
+       document.write(`<br />number + null  : ${8 + null}`); // 8
+       document.write(`<br />-null : ${-null}`); // 0
+       document.write(`<br />number - null  : ${8 - null}`); // 8
+       document.write(`<br /> <br /> number as string / null : ${"5" / null}`); // 0
+       document.write(`<br />number as string * null : ${"5" * null}`); // Infinity
+       document.write(`<br />number as string + null : ${"5" + null}`); // 5null
+       document.write(`<br />number as string - null : ${"5" - null}`); // 5
+         
+       document.write(`<br /> <br /> number as string - number : ${"5" - 1}`); // converts string to no
+       document.write(`<br />number as string + number: ${"5" + 1}`); // concatenate 
+       document.write(`<br />number as string * number: ${"5" * 1}`); // converts string to no
+       document.write(`<br />number as string / number: ${"5" / 1}`); // converts string to no
+
+       document.write(`<br /><br /> string + number : ${"five" + 1}`); //five1
+       document.write(`<br /> string - number : ${"five" - 1}`); // NaN
+       document.write(`<br /> string * number : ${"five" * 1}`); // NaN
+       document.write(`<br /> string / number : ${"five" / 1}`); // NaN
+
+       document.write(`<br /><br /> undefined + number : ${undefined + 1}`); //NaN
+       document.write(`<br /> undefined - number : ${undefined - 1}`); // NaN
+       document.write(`<br /> undefined * number : ${undefined * 1}`); // NaN
+       document.write(`<br /> undefined / number : ${undefined / 1}`); // NaN
+       
+       document.write(`<br /><br />boolean == 0 : ${false == 0}`); //true
+    </script>
+</body>
+</html>

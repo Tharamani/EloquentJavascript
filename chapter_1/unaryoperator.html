@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <title>Unary operator</title>
+</head>
+<body>
+    <script>
+        // Unary operators => work on one value(typeof, +value(Unary Plus), -value(Unary Minus), ++value(pre increment), --value(pre decrement), value++(post increment), value--(post decrement))
+        let age = 10;
+        //typeof operator =>  produces string value
+        document.write(`<br /> typeof : ${typeof age}`); // string value number
+        document.write(`<br />  <br />  Unary Plus : ${+age}`);
+        document.write(`<br /> Unary Minus : ${-age}`);
+        document.write(`<br /> pre increment : ${++age}`);
+        document.write(`<br /> pre decrement : ${--age}`);
+        document.write(`<br /> current value : ${age++}`);
+        document.write(`<br /> post increment : ${age}`);
+        document.write(`<br /> current value : ${age}`);
+        document.write(`<br /> post decrement : ${age--}`);
+        document.write(`<br /> current value : ${age}`);
+
+        //unary convert sring to number
+        let s = '10';
+        document.write(`<br /> <br />  typeof : ${typeof s}`); // string
+        document.write(`<br /> Unary plus convert sring to number : ${+s}`); // 10
+        document.write(`<br /> typeof : ${typeof +s}`); // number
+
+        //unary convert boolean to number
+        let f = false,
+        t = true;
+        document.write(`<br /> <br /> typeof : ${typeof f}`); // boolean
+        document.write(`<br /> Unary plus convert boolean to number : ${-f}`); // 0
+        document.write(`<br /> typeof : ${typeof -f}`); // number
+
+        document.write(`<br /> <br /> typeof : ${typeof t}`);  // boolean
+        document.write(`<br /> Unary plus convert boolean to number : ${+t}`); // 1
+        document.write(`<br /> typeof : ${typeof +t}`); // number
+       
+        let name = 'John'
+        document.write(`<br /> <br /> typeof : ${typeof name}`); // string value string
+
+    </script>
+</body>
+</html>

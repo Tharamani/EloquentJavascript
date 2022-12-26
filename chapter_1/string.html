@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>String</title>
+</head>
+<body>
+    <script>
+       // String => Represents text(enclosed in quotes)
+       // 3 ways => Single, Double, Backticks
+        document.write('<br /> Single quoted string');
+        document.write("<br /> Double quoted string");
+        let name = 'Jack'
+        //Backtick quoted strings are also called Template Literals
+        document.write(`<br /> Backtick represents string with variables : ${name}`);
+        document.write(`<br /> Backtick represents string with expressions : ${2 + 4}`);
+
+        //Escaping characters => whenever a backslash (\) is found inside quoted text, it indicates that the character after it has a special meaning.
+        document.write(" <br /> document.write with Escaping\ncharcter "); 
+        document.write(" <br /> document.write with Escaping\tcharcter "); 
+
+        console.log('New line  \n newline ');
+        console.log('Tab \tnewline ');
+        console.log("I need blackslash in string \\"); // \
+        // console.log("I need blackslash in string \\\"); // error
+        console.log("A newline character is written like \"\""); // ""
+        console.log("A newline character is written like \"\\\""); // "\"
+        console.log("A newline character is written like \"\\n\""); // "\n"
+
+        //String concatenation using '+' operator
+         document.write(" <br /> String concat : con" + "cat" + "e" + "nate"); 
+    </script>
+</body>
+</html>

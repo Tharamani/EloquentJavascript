@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title>Boolean</title>
+</head>
+<body>
+    <script>
+        // Boolean - has two values true & false
+        //Ways to produce boolean values Comparision operators  (>, <, >=, <=, ==, !=, ===)
+        // Comparision with number
+        document.write(`<br /> compare numbers : ${3 > 2}`) ;
+        document.write(`<br /> compare numbers : ${3 < 2}`) ;
+       
+         // Comparision with string
+        document.write(`<br /> <br /> compare string : ${"Aardvark" < "Zoroaster"}`) ;
+        document.write(`<br /> compare string : ${"Itchy" != "Scratchy"}`) ;
+        document.write(`<br /> compare string : ${"Apple" == "Orange"}`) ;
+        document.write(`<br /> compare string : ${"Apple" === "Apple"}`) ;
+
+        // There is only one value in JavaScript that is not equal to itself NaN
+        document.write(`<br /> <br /> compare NaN : ${NaN == NaN}`) ;
+        document.write(`<br /> compare NaN : ${NaN === NaN}`) ;
+
+        //Operations that can be applied to Boolean values - Logical Operations(&&, ||, !)
+        // Logical && => true when both operands are true, else false
+        document.write(`<br /> <br /> Logical AND : ${true && true}`);
+        document.write(`<br /> Logical AND : ${false && false}`);
+        document.write(`<br /> Logical AND : ${false && true}`);
+        document.write(`<br /> Logical AND : ${true && false}`);
+
+        //Logical || => It produces true if either of the values given to it is true.
+        document.write(`<br /> <br /> Logical OR : ${true || true}`);
+        document.write(`<br /> Logical OR : ${false || false}`);
+        document.write(`<br /> Logical OR : ${false || true}`);
+        document.write(`<br /> Logical OR : ${true ||false}`);
+
+        //Logical Unary operator ! = Flips the value 
+         document.write(`<br /> <br /> Logical NOT true : ${!true}`);
+         document.write(`<br /> Logical NOT false : ${!false}`);
+
+        //Ternary /conditional operator => operates on 3 values 
+        document.write(`<br /> <br /> Ternary Operator : ${true ? 1 : 2}`);
+        document.write(`<br /> Ternary Operator : ${false ? 1 : 2}`);
+    </script>
+</body>
+</html>

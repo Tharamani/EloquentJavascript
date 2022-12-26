@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>Empty Value</title>
+</head>
+<body>
+    <script>
+        // Empty values (undefined and null) => They(undefined and null) are values in JS but without information
+        // undefined => “value is not assigned”. default initial value for unassigned variable
+       let n;
+       document.write(`<br /> Empty value  undefined : ${n}`);
+
+       let counter;
+       document.write(`<br /> Empty value  undefined : ${counter}`);
+       document.write(`<br /> Empty value  undefined : ${typeof counter}`);
+
+       // null => represents “nothing”, “empty” or “value unknown”.
+       let age = null;
+       document.write(`<br /> Empty value  null : ${age}`);
+      //  The typeof null returns object is a known bug in JavaScript.
+       document.write(`<br /> Empty value  null : ${typeof age}`);
+
+     // JavaScript defines that null is equal to undefined
+     document.write(`<br /> null equals undefined : ${null == undefined}`); // true
+    </script>
+</body>
+</html>

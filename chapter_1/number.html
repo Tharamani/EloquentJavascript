@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>Number</title>
+</head>
+<body>
+    <script>
+        //Number => represents Integer, floating point numbers 
+        let n = 123; // Integer
+        document.write(`<br /> Integers: ${n}`)
+        
+        n = 112.3; // floating point numbers
+        document.write(`<br /> floating point numbers: ${n}`)
+
+        // Arthmetic operations(+, -, *, /, %) with precendence
+        
+        //Special numbers => +Infinity, -Infinity, NaN
+        //Infinity => special value that’s greater than any number, 
+        document.write(`<br /> Infinity 1/0 : ${1/0}`)
+        document.write(`<br /> Infinity - 1 : ${Infinity - 1}`)
+        document.write(`<br /> Infinity : ${Infinity}`)
+
+        // NaN => computational error. 
+        // It is a result of an incorrect or an undefined mathematical operation
+        document.write(`<br /> 0/0 : ${0/0}`)
+        document.write(`<br /> Infinity - Infinity : ${Infinity - Infinity}`)
+        document.write(`<br /> NaN + 1 : ${NaN + 1}`) // NaN
+        document.write(`<br /> NaN * 3 : ${NaN * 3}`) // NaN
+        document.write(`<br /> "not a number" - 1 : ${"not a number" - 1}`) // NaN
+        document.write(`<br /> One exception case for NaN: ${NaN ** 0}`) // 1
+    </script>
+</body>
+</html>

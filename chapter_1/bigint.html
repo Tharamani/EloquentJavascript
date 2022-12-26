@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title>Bigint</title>
+</head>
+<body>
+    <script>
+        // Bigint => represents integers of arbitrary length > (2e53-1)
+        // the "n" at the end means it's a BigInt
+        const bigInt = 9007199254740991n;
+        document.write(`<br /> Bigint : ${bigInt}`);
+
+        // BigInt value
+        const bigInt1 = 900719925124740998n;
+        // Adding two big integers
+        const result1 = bigInt1 + 1n;
+        document.write(`<br /> Adding bigint values: ${result1}`);
+
+        let x = Number.MAX_SAFE_INTEGER;
+        console.log(typeof x) // number
+        x = x + 1; 
+        document.write(`<br /> Adding number: ${x}`); // 9007199254740992
+        x = x + 1;
+        document.write(`<br /> Adding number: ${x}`);  // 9007199254740992 (same as above)
+
+        let y = BigInt(Number.MAX_SAFE_INTEGER);
+        console.log(y) // bigint
+        console.log(typeof y) // bigint
+        y = y + 1n; 
+        document.write(`<br /> Adding bigint: ${y}`); // 9007199254740992
+         console.log(typeof y)// bigint
+        y = y + 1n; 
+        document.write(`<br /> Adding bigint: ${y}`); // 9007199254740993 (correct now)
+        console.log(typeof y)// bigint
+    </script>
+</body>
+</html>
