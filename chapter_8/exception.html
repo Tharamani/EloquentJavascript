@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Exception
+    </title>
+</head>
+<script>
+function promptDirection(question) {
+  let result = prompt(question);
+  if (result.toLowerCase() == "left") return "L";
+  if (result.toLowerCase() == "right") return "R";
+  throw new Error("Invalid direction: " + result); // The throw keyword is used to raise an exception
+  // Error constructor to create our exception value
+}
+
+function look() {
+  if (promptDirection("Which way?") === "L") {
+    return "a house";
+  } else {
+    return "two angry bears";
+  }
+}
+// Catching one is done by wrapping a piece of code in a try block, followed by the keyword catch.
+// When the code in the try block causes an exception to be raised, the catch block is evaluated
+try {
+  console.log("You see", look());
+} catch (error) {
+  console.log("Something went wrong: " + error);
+}
+</script>
+</html>

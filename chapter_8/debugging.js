@@ -5,11 +5,16 @@ function numberToString (n, base = 10) {
     n = -n
   }
   do {
-    console.log('do', n, base, result)
     result = String(n % base) + result
-    n /= base
+    console.log('do', n, base, result)
+
+    // n /= base => produces error
+    console.log('n / base', n / base)
+    n = Math.floor(n / base) // fix
   } while (n > 0)
+  console.log('while', sign, result)
   return sign + result
 }
+
 numberToString(13, 10)
 // console.log(numberToString(13, 10))

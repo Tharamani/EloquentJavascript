@@ -4,4 +4,11 @@ function canYouSpotTheProblem () {
     console.log('Happy happy')
   }
 }
-canYouSpotTheProblem()
+// canYouSpotTheProblem()
+
+function foo () {
+  // this.name = 'abc'
+  console.log('this', this)
+  return this
+}
+console.log(foo())
