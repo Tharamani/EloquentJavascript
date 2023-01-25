@@ -7,7 +7,6 @@
 
 const getTodos = (resource) => {
   return new Promise((resolve, reject) => {
-    // async call
     const request = new XMLHttpRequest()
 
     request.addEventListener('readystatechange', () => {
@@ -25,7 +24,7 @@ const getTodos = (resource) => {
   })
 }
 
-getTodos('todos/luigi.json').then(data => {
+getTodos('https://jsonplaceholder.typicode.com/todos/').then(data => {
   console.log('Promise resolved : ', data)
 }).catch(error => {
   console.log('Promise rejected : ', error)

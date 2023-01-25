@@ -1,6 +1,6 @@
 // async await
 const getTodos = async () => {
-  const response = await fetch('https://jsonplaceholder.typicode.com/todoss/')
+  const response = await fetch('https://jsonplaceholder.typicode.com/todos/')
   //   const response = await fetch('todos/luigi.json')
   if (response.status !== 200) {
     throw new Error('Cannot fetch data')

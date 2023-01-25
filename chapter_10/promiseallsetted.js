@@ -8,7 +8,7 @@ const p1 = new Promise((resolve, reject) => {
 const p2 = new Promise((resolve, reject) => {
   setTimeout(() => {
     console.log('The second promise has rejected')
-    reject('no value')
+    reject(new Error('No value'))
   }, 2 * 1000)
 })
 

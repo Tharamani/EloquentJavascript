@@ -20,6 +20,6 @@ getSomething().then(data => {
   console.log('then data')
   console.log(data)
 }).catch(error => {
-  console.log('then error')
+  console.log('catch error')
   console.log(error)
 })

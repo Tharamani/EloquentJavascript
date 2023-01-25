@@ -25,14 +25,14 @@ const getTodos = (resource) => {
   })
 }
 
-getTodos('todos/luigi.json').then(data => {
-  console.log('Promise luigi resolved : ', data)
-  return getTodos('todos/marys.json')
+getTodos('https://jsonplaceholder.typicode.com/todos/1').then(data => {
+  console.log('Promise 1 resolved : ', data)
+  return getTodos('https://jsonplaceholder.typicode.com/todos/2')
 }).then(data => {
-  console.log('Promise mary resolved : ', data)
-  return getTodos('todos/john.json')
+  console.log('Promise 2 resolved : ', data)
+  return getTodos('https://jsonplaceholder.typicode.com/todos/3')
 }).then(data => {
-  console.log('Promise john resolved : ', data)
+  console.log('Promise 3 resolved : ', data)
 }).catch(error => {
   console.log('Promise rejected : ', error)
 })
