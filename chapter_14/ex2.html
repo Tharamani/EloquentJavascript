@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>DOM!!!</title>
+</head>
+<body>
+  <h1 id="one">Welcome</h1>
+  <p>This is the welcome message.</p>
+  <h2>Technology</h2>
+  <p id="second">This is the technology section.</p>
+
+  <!-- creating nodes -->
+  
+  <p>The <img src="https://eloquentjavascript.net/img/cat.png" alt="Cat"> in the
+    <img src="https://eloquentjavascript.net/img/hat.png" alt="Hat">.</p>
+  
+  <p><button onclick="replaceImages()">Replace</button></p>
+ 
+  <script type="text/javascript">
+    console.log(document.nodeType) //  nodetype = 9 (document)
+
+    let hElement = document.getElementById("one")
+    console.log(hElement.nodeType) // //  nodetype = 1 (element)
+
+    // Finding elements
+    // getElementById
+	let text = document.getElementById("one").innerHTML;
+	console.log("The first heading is " , text);
+    console.log("Node type " , text.nodeType); // 3 (text)
+
+    // getElementsByTagName
+    let paragraphs = document.getElementsByTagName("p");
+    console.log(" paragraphs : ", paragraphs , Array.from(paragraphs));
+    console.log("Content in the second paragraph is ", paragraphs[1].innerHTML);
+
+    // Changing the document
+    document.getElementById("second").innerHTML = "The orginal message is changed.";
+    console.log("Content in the second paragraph after changing " + paragraphs[1].innerHTML);
+
+    let paragraphs2 = document.body.getElementsByTagName("p");
+    console.log(" paragraphs2 : ", paragraphs2 , Array.from(paragraphs2));
+    // document.body.insertBefore(paragraphs2[1], paragraphs2[0]);
+
+    // Creating nodes
+    function replaceImages() {
+    let images = document.body.getElementsByTagName("img");
+    for (let i = images.length - 1; i >= 0; i--) {
+      let image = images[i];
+      console.log(" image : ", image);
+      if (image.alt) {
+        let text = document.createTextNode(image.alt);
+        console.log(" text : ", text);
+        image.parentNode.replaceChild(text, image);
+      }
+    }
+  }
+  </script>
+</body>
+</html>
