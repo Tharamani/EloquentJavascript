@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Forms!!!</title>
+  </head>
+  <body>
+    <div>
+        <h1>Form fields - Focus</h1>
+        <h3><p>Form fields can get keyboard focus.
+            When clicked or activated in some other way, they become the currently active element </p>
+        
+           <p> Can type into a text field only when it is focused.
+            Other fields respond differently to keyboard events.
+            example, a 'select' menu tries to move to the option that contains the text the user typed and responds to the arrow keys by moving its selection up and down.
+        </p>
+    <p>
+                We can control focus from JavaScript with the focus and blur methods. The first moves focus to the DOM element it is called on, and the second removes focus.
+            </p>
+        </h3>
+        <h4>The value in document.activeElement corresponds to the currently focused element.
+
+          HTML also provides the autofocus attribute, which produces the same effect while letting the browser know what we are trying to achieve
+        </h4>
+        <input type="text">
+
+        <!-- tabindex=2 -->
+        <input type="text" tabindex=1> <a href=".">(help)</a>
+        <button onclick="console.log('ok')" tabindex=2>OK</button>
+
+        <!-- disabled attribute attribute that can be specified without value-->
+        <button>I'm all right</button>
+        <button disabled>I'm disabled</button>
+    </div>
+    <!-- activeElement, focus, blur -->
+    <script>
+        document.querySelector("input").focus();
+        console.log(document.activeElement.tagName);
+      
+        document.querySelector("input").blur();
+        console.log(document.activeElement.tagName);
+
+        
+      </script>
+  </body>
+</html>

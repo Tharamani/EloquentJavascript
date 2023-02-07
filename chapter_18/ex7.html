@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Storing data client-side</title>
+  </head>
+  <body>
+    <h5>localStorage object can be used to store data in a way that survives page reloads. This object allows you to file string values under names.</h5>
+  </body>
+  <script>
+    localStorage.setItem("username", "marijn");
+    console.log(localStorage.getItem("username"));
+    localStorage.removeItem("username");
+</script>
+</html>

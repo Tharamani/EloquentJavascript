@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Forms!!!</title>
+  </head>
+  <body>
+    <div>
+        <h1>Form inputs</h1>
+        <h3>Forms were originally designed for the Web to allow web sites to send user-submitted information in an HTTP request.
+            <p>the DOM elements that represent form fields support a number of properties and events</p>
+        </h3>
+        <h3>
+            A web form consists of any number of input fields grouped in a <form> tag. HTML allows several different styles of fields, ranging from simple on/off checkboxes to drop-down menus and fields for text input.
+        </h3>
+        
+        <!-- field types use the <input> tag. This tag’s type attribute is used to select the field’s style -->
+        <p><input type="text" value="abc" />(text)</p>
+        <p><input type="password" value="abc" />(password)</p>
+        <p><input type="checkbox" checked />(checked)</p>
+        <p><input type="radio" value="A" name="choice"/>A
+        <input type="radio" value="B" name="choice"/>B
+        <input type="radio" value="C" name="choice" checked/>C  (radio)</p>
+        <p><input type="file" />(file)</p>
+
+        <!-- Multiline inputs -->
+        <p><textarea>
+            one
+            two
+            three
+            </textarea>
+        </p>
+            <!-- <select> tag is used to create a field that allows,to select from a number of predefined options -->
+            <p>
+                <select>
+                    <option>Opt-1</option>
+                    <option>Opt-2</option>
+                    <option>Opt-3</option>
+                </select>
+            </p>
+            <h2>Important Note - Whenever the value of a form field changes, it will fire a "change" event.</h2>
+    </div>
+  </body>
+</html>
